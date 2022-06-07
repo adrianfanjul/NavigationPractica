@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_page_two"
+    tools:context=".features.login.LoginActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_two_title"
+        style="@style/onboarding_two_title"
+        android:text="@string/onboarding_two_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_one_text"
+        style="@style/onboarding_two_text"
+        android:text="@string/onboarding_two_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_two_title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/onboarding_two_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_one_text"
+        app:srcCompat="@drawable/photo_onboarding_two" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onboarding_two_skip_button"
+        style="@style/onboarding_two_skip_button"
+        android:text="@string/onboarding_two_skip_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/onboarding_two_next_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_two_img"
+        app:strokeColor="@color/secondaryTextColor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onboarding_two_next_button"
+        style="@style/onboarding_two_next_button"
+        android:text="@string/onboarding_two_next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/onboarding_two_skip_button"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_two_img"
+        app:strokeColor="@color/secondaryTextColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

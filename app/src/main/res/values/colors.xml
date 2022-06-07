@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4db6ac</color>
+    <color name="primaryLightColor">#82e9de</color>
+    <color name="primaryDarkColor">#00867d</color>
+    <color name="secondaryColor">#ff6f00</color>
+    <color name="secondaryLightColor">#ffa040</color>
+    <color name="secondaryDarkColor">#c43e00</color>
+    <color name="primaryTextColor">#fafafa</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="subtextColor">#8F8A8A</color>
+
+    <color name="register_background">#97E8C2</color>
+    <color name="register_input_background">#AECABD</color>
+    <color name="register_btn_ok">#D6C422</color>
+    <color name="main_image_bg">#CCABD1</color>
+    <color name="home_btn_camara">#90CAF9</color>
+    <color name="home_btn_corazon">#B39DDB</color>
+    <color name="home_btn_picos">#F48FB1</color>
+    <color name="home_btn_cara">#FFE082</color>
+
+    <color name="background_page_one">#CE93D8</color>
+    <color name="background_page_one_dark">#2A2A2B</color>
+    <color name="background_page_two">#FFAB91</color>
+    <color name="background_page_three">#90CAF9</color>
+    <color name="background_page_three_button">#BEC1C3</color>
+    <color name="onboarding_text_color">#5E5D5D</color>
+
+
+    <color name="airplane">#E82222</color>
+    <color name="electricCar">#323333</color>
+    <color name="flyingCar">#9968A1</color>
+    <color name="motorHome">#81D4FA</color>
+    <color name="pickUpCar">#FFAB91</color>
+    <color name="sportCar">#48B7EA</color>
+    <color name="clasicCar">#EF9A9A</color>ç
+    <color name="bus">#FFCC80</color>
+
+
+</resources>

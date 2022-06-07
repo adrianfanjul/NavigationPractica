@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="register_item_margin">20dp</dimen>
+    <dimen name="login_items_margin">10dp</dimen>
+    <dimen name="fragment_vertical_margin">76dp</dimen>
+    <dimen name="dimen_margin_horizontal_window">16dp</dimen>
+    <dimen name="home_title_margin_top">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

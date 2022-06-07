@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="h1" format="reference"/>
+    <attr name="h2" format="reference"/>
+    <attr name="h3" format="reference"/>
+    <attr name="h4" format="reference"/>
+    <attr name="h5" format="reference"/>
+    <attr name="h6" format="reference"/>
+    <attr name="s1" format="reference"/>
+    <attr name="body14" format="reference"/>
+    <attr name="body16" format="reference"/>
+    <attr name="button" format="reference"/>
+</resources>

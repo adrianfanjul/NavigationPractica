@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/fragmentOnBoardingOne">
+
+    <fragment
+        android:id="@+id/fragmentOnBoardingOne"
+        android:name="com.tokioschool.navigationpractica.features.login.fragments.FragmentOnBoardingOne"
+        android:label="FragmentOnBoardingOne"
+        tools:layout="@layout/fragment_on_boarding_one">
+
+        <action
+            android:id="@+id/to_fragmentOnBoardingTwo"
+            app:destination="@id/fragmentOnBoardingTwo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentOnBoardingTwo"
+        android:name="com.tokioschool.navigationpractica.features.login.fragments.FragmentOnBoardingTwo"
+        android:label="FragmentOnBoardingTwo"
+        tools:layout="@layout/fragment_on_boarding_two">
+        <action
+            android:id="@+id/to_fragmentOnBoardingThree"
+            app:destination="@id/fragmentOnBoardingThree" />
+        <action
+            android:id="@+id/fragment_on_boarding_two_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentOnBoardingThree"
+        android:name="com.tokioschool.navigationpractica.features.login.fragments.FragmentOnBoardingThree"
+        android:label="FragmentOnBoardingThree"
+        tools:layout="@layout/fragment_on_boarding_three">
+
+        <action
+            android:id="@+id/to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.tokioschool.navigationpractica.features.login.fragments.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/to_fragmentRegister"
+            app:destination="@id/fragmentRegister" />
+
+        <argument
+            android:name="registredUser"
+            app:argType="com.tokioschool.navigationpractica.domain.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/to_homeActivity"
+            app:destination="@id/homeActivity" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.tokioschool.navigationpractica.features.login.fragments.FragmentRegister"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/fragmentRegister_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+
+    </fragment>
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.tokioschool.navigationpractica.features.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" >
+
+        <argument
+            android:name="loginUser"
+            app:argType="com.tokioschool.navigationpractica.domain.User"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </activity>
+
+</navigation>

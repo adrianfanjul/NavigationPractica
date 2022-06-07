@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">FlujoLogin</string>
+    <string name="register_text_name">¿Como te llamas?</string>
+    <string name="register_img_name_description">Imagen cara</string>
+    <string name="register_img_name_end_description">Icono ojo</string>
+    <string name="register_img_surname_description">Imagen cara</string>
+    <string name="register_img_surname_end_description">Icono ojo</string>
+    <string name="register_text_surname">¿Y tu apellido?</string>
+    <string name="register_dropdown_edad">¿Cuantos años tienes?</string>
+    <string name="age_1">0-5</string>
+    <string name="age_2">6-11</string>
+    <string name="age_3">12-17</string>
+    <string name="age_4">18-99</string>
+    <string name="register_btn_ok">Me apunto</string>
+    <string name="register_foot_text">Politica de privacidad</string>
+    <string name="register_text_error">Ups no creo que sea correcto, reísalo</string>
+    <string name="register_age_error">Esta app no es para ti</string>
+    <string name="register_img_text">Imagen chica con camara de fotos</string>
+    <string name="register_foot_link">Ver condiciones</string>
+
+    <string name="login_input_login">Login</string>
+    <string name="login_input_password">Password</string>
+    <string name="login_button_login">Login</string>
+    <string name="login_forgot_text">Forgot password</string>
+    <string name="login_getnew_text">Get new</string>
+    <string name="login_account_text">Do you have an account?</string>
+    <string name="login_account_link">Create new</string>
+    <string name="login_snackbar_text">These functionalities will be implemented soon</string>
+
+    <string name="main_title_text">Tu App de Viajes</string>
+    <string name="main_subtitle_text">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar.Si eres tu? No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches,ver el tiempo ...</string>
+    <string name="home_card_subtitle_text">USA, Los Angeles-2 Weeks</string>
+    <string name="home_card_title_text">City of Los Angeles</string>
+    <string name="home_card_subtitle_text2">Madives- 3 weeks</string>
+    <string name="home_card_title_text2">Bech vacation</string>
+    <string name="home_title">Upcoming meetups</string>
+    <string name="camera_icon_description">Icono camara</string>
+    <string name="heart_icon_description">Icono corazon</string>
+    <string name="face_icon_description">Icono cara</string>corazon
+    <string name="peak_icon_description">Icono pico</string>
+    <string name="login_validation_fail">El usuario o contraseña son incorrectos por favor intentelo de nuevo</string>
+    <string name="home_user_error">Error al recibir el dato</string>
+    <string name="login_no_register">Ahun no te has registrado, pulsa create new para hacerlo</string>
+    <string name="register_toolbar_title">Registro</string>
+    <string name="menu_home_eurodisney_item">Eurodisney</string>
+    <string name="menu_home_coche_item">Alquila un coche</string>
+    <string name="home_toolbar_title">Home</string>
+    <string name="home_snackbar_text">El usuario es %1$s y la contraseña es %2$s</string>
+    <string name="login_button_ok">Entendido</string>
+    <string name="main_unknown_fragment">Fragment desconocido</string>
+    <string name="onboarding_one_title">Tu App de Viajes</string>
+    <string name="onboarding_two_title">Find Your Match!</string>
+    <string name="onboarding_three_title">Find the Perfect \nRoommate</string>
+    <string name="onboarding_one_text">Hola estamos buscando a millones deusuarios con inquietudes y ganas de viajar. Si eres tu? No dudes accede a nuestra app y descubriras miles de detinos y facilidades para alquilar coches, ver el tiempo ...</string>
+    <string name="onboarding_one_next_button">Next</string>
+    <string name="onboarding_two_text">We\'ve helped millions across the nation find their perfect match.. and you\'re next!</string>
+    <string name="onboarding_three_text">We\'ve helped millions across the nation find their perfect match.. and you\'re next!</string>
+    <string name="onboarding_two_skip_button">Skip</string>
+    <string name="onboarding_two_next_button">Next</string>
+    <string name="onboarding_three_skip_button">Log in</string>
+    <string name="home_title_three">Pagina3</string>
+    <string name="home_title_four">Pagina4</string>
+    <string name="home_title_two">Lista de coches</string>
+    <string name="price_car">$%.2f/per day</string>
+    <string name="car_type_message">El coche es de tipo %1$s</string>
+
+
+</resources>

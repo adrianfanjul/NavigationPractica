@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionModeOverflowMenu" >
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:colorBackground">@color/primaryLightColor</item>
+        <item name="android:windowBackground">@color/primaryLightColor</item>
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="colorControlHighlight">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="register_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/register_input_background</item>
+        <item name="android:textAppearance">?body16</item>
+    </style>
+
+    <style name="register_input_layout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/register_item_margin</item>
+    </style>
+
+    <style name="register_spinner_ages">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">none</item>
+        <item name="android:backgroundTint">@color/register_input_background</item>
+        <item name="android:textAppearance">?body16</item>
+    </style>
+
+    <style name="register_spinner_layout" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/register_item_margin</item>
+    </style>
+
+    <style name="register_subtext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/subtextColor</item>
+        <item name="android:paddingEnd">@dimen/register_item_margin</item>
+        <item name="android:layout_marginBottom">@dimen/register_item_margin</item>
+        <item name="android:textAppearance">?body16</item>
+    </style>
+
+    <style name="register_link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginBottom">@dimen/register_item_margin</item>
+        <item name="android:textAppearance">?body16</item>
+    </style>
+
+    <style name="register_btn_ok">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:backgroundTint">@color/secondaryColor</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+
+    <style name="login_title" >
+        <item name="android:textAppearance">?h4</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="icon_button">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:backgroundTint">@color/secondaryTextColor</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/login_items_margin</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+
+    <style name="login_subtext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textColor">@color/subtextColor</item>
+        <item name="android:paddingEnd">@dimen/login_items_margin</item>
+        <item name="android:layout_marginTop">@dimen/login_items_margin</item>
+    </style>
+
+    <style name="login_link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="card_text">
+        <item name="android:gravity">start</item>
+        <item name="android:textAppearance">?body14</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="iconTint">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="onboarding_one_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:background">@color/background_page_one</item>
+        <item name="android:textAppearance">?body16</item>
+        <item name="android:textColor">@color/onboarding_text_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="onboarding_two_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:background">@color/background_page_two</item>
+        <item name="android:textAppearance">?body16</item>
+        <item name="android:textColor">@color/onboarding_text_color</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="onboarding_three_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:background">@color/background_page_three</item>
+        <item name="android:textAppearance">?body16</item>
+        <item name="android:textColor">@color/onboarding_text_color</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="onboarding_one_next_button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+    <style name="onboarding_two_skip_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginHorizontal">@dimen/login_items_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+
+    <style name="onboarding_two_next_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginHorizontal">@dimen/login_items_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/secondaryTextColor</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+
+    <style name="onboarding_three_login_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginHorizontal">@dimen/login_items_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/background_page_three_button</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">?button</item>
+    </style>
+
+    <style name="onboarding_two_title">
+        <item name="android:textAppearance">?h5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">@dimen/login_items_margin</item>
+    </style>
+
+    <style name="onboarding_three_title" parent="onboarding_two_title"/>
+
+
+
+</resources>

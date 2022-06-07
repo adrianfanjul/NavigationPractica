@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NavigationPractica" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="h1">@style/TextAppearance.ToolbarLogin.Headline1</item>
+        <item name="h2">@style/TextAppearance.ToolbarLogin.Headline2</item>
+        <item name="h3">@style/TextAppearance.ToolbarLogin.Headline3</item>
+        <item name="h4">@style/TextAppearance.ToolbarLogin.Headline4</item>
+        <item name="h5">@style/TextAppearance.ToolbarLogin.Headline5</item>
+        <item name="h6">@style/TextAppearance.ToolbarLogin.Headline6</item>
+        <item name="s1">@style/TextAppearance.ToolbarLogin.Subtitle1</item>
+        <item name="body14">@style/TextAppearance.ToolbarLogin.Body14</item>
+        <item name="body16">@style/TextAppearance.ToolbarLogin.Body16</item>
+        <item name="button">@style/TextAppearance.ToolbarLogin.Button</item>
+    </style>
+
+    <style name="Theme.NavigationPractica.NoActionBar">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NavigationPractica.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NavigationPractica.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NavigationPractica.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

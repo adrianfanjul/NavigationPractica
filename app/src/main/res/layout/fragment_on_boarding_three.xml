@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_page_three"
+    tools:context=".features.login.LoginActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_three_title"
+        style="@style/onboarding_three_title"
+        android:text="@string/onboarding_three_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_three_text"
+        style="@style/onboarding_three_text"
+        android:text="@string/onboarding_three_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_three_title" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/onboarding_three_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_three_text"
+        app:srcCompat="@drawable/photo_onboarding_three" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onboarding_three_login_button"
+        style="@style/onboarding_three_login_button"
+        android:text="@string/onboarding_three_skip_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_three_img"
+        app:strokeColor="@color/secondaryTextColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

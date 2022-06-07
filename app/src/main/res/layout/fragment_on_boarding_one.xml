@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".features.login.LoginActivity"
+    android:background="@color/background_page_one_dark">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_one_title"
+        android:textAppearance="?h5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/login_items_margin"
+        android:text="@string/onboarding_one_title"
+        android:background="@color/background_page_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/onboarding_one_text"
+        android:text="@string/onboarding_one_text"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_one_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/onboarding_one_text" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/onboarding_one_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_bg_onboarding1"
+        app:layout_constraintHeight_percent="0.6"
+        app:srcCompat="@drawable/photo_onboarding_one"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_one_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_next_button"
+        android:text="@string/onboarding_one_next_button"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_one_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/onboarding_one_next_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
