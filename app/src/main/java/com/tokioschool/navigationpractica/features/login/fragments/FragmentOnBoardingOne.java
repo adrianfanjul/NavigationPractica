@@ -9,12 +9,12 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 import com.tokioschool.navigationpractica.databinding.FragmentOnBoardingOneBinding;
-import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModel;
+import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModelLogin;
 
 public class FragmentOnBoardingOne extends Fragment {
 
     private FragmentOnBoardingOneBinding binding;
-    private SharedViewModel viewModel;
+    private SharedViewModelLogin viewModel;
     private static final String TAG="FragmentOnBoardingOne";
 
     @Override
@@ -26,7 +26,7 @@ public class FragmentOnBoardingOne extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModelLogin.class);
         viewModel.setFragment(TAG);
 
     }

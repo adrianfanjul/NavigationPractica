@@ -18,11 +18,11 @@ import com.google.android.material.snackbar.Snackbar;
 import com.tokioschool.navigationpractica.R;
 import com.tokioschool.navigationpractica.databinding.FragmentLoginBinding;
 import com.tokioschool.navigationpractica.domain.User;
-import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModel;
+import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModelLogin;
 
 public class FragmentLogin extends Fragment {
     private FragmentLoginBinding binding;
-    private SharedViewModel viewModel;
+    private SharedViewModelLogin viewModel;
     private static final String TAG="FragmentLogin";
 
 
@@ -41,7 +41,7 @@ public class FragmentLogin extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModelLogin.class);
         listeners();
         viewModel.setFragment(TAG);
     }

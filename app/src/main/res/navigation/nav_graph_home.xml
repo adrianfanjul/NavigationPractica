@@ -5,6 +5,14 @@
     android:id="@+id/nav_graph_home"
     app:startDestination="@id/fragmentTabs">
 
+    <action
+        android:id="@+id/action_global_lilaFragment"
+        app:destination="@id/lilaFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
+
     <fragment
         android:id="@+id/lilaFragment"
         android:name="com.tokioschool.navigationpractica.features.home.fragments.LilaFragment"

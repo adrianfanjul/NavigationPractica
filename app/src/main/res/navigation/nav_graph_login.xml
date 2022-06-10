@@ -13,7 +13,11 @@
 
         <action
             android:id="@+id/to_fragmentOnBoardingTwo"
-            app:destination="@id/fragmentOnBoardingTwo" />
+            app:destination="@id/fragmentOnBoardingTwo"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 
     <fragment
@@ -23,10 +27,18 @@
         tools:layout="@layout/fragment_on_boarding_two">
         <action
             android:id="@+id/to_fragmentOnBoardingThree"
-            app:destination="@id/fragmentOnBoardingThree" />
+            app:destination="@id/fragmentOnBoardingThree"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
         <action
             android:id="@+id/fragment_on_boarding_two_to_fragmentLogin"
-            app:destination="@id/fragmentLogin" />
+            app:destination="@id/fragmentLogin"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -37,7 +49,11 @@
 
         <action
             android:id="@+id/to_fragmentLogin"
-            app:destination="@id/fragmentLogin" />
+            app:destination="@id/fragmentLogin"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left"/>
     </fragment>
 
     <fragment
@@ -47,7 +63,11 @@
         tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/to_fragmentRegister"
-            app:destination="@id/fragmentRegister" />
+            app:destination="@id/fragmentRegister"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left"/>
 
         <argument
             android:name="registredUser"
@@ -56,7 +76,11 @@
             android:defaultValue="@null" />
         <action
             android:id="@+id/to_homeActivity"
-            app:destination="@id/homeActivity" />
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left"/>
 
     </fragment>
 
@@ -67,7 +91,11 @@
         tools:layout="@layout/fragment_register" >
         <action
             android:id="@+id/fragmentRegister_to_fragmentLogin"
-            app:destination="@id/fragmentLogin" />
+            app:destination="@id/fragmentLogin"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_out_right"
+            app:popExitAnim="@anim/slide_in_left"/>
 
     </fragment>
 

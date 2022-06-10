@@ -23,14 +23,14 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.tokioschool.navigationpractica.R;
 import com.tokioschool.navigationpractica.databinding.FragmentRegisterBinding;
 import com.tokioschool.navigationpractica.domain.User;
-import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModel;
+import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModelLogin;
 
 public class FragmentRegister extends Fragment {
     private User user;
     private FragmentRegisterBinding binding;
     private static final String TAG="FragmentRegister";
     private static final int REQUEST_IMAGE_CAPTURE = 1;
-    private SharedViewModel viewModel;
+    private SharedViewModelLogin viewModel;
 
     public FragmentRegister() {
 
@@ -52,7 +52,7 @@ public class FragmentRegister extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModelLogin.class);
         viewModel.setFragment(TAG);
         loadSpinner();
         listeners();

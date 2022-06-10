@@ -1,9 +1,7 @@
 package com.tokioschool.navigationpractica.features.login;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
@@ -12,15 +10,14 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.tokioschool.navigationpractica.R;
 import com.tokioschool.navigationpractica.databinding.ActivityLoginBinding;
-import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModel;
+import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModelLogin;
 
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
-    private SharedViewModel viewModel;
+    private SharedViewModelLogin viewModel;
     private AppBarConfiguration appBarConfiguration;
     private ActivityLoginBinding binding;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        viewModel = new ViewModelProvider(this).get(SharedViewModel.class);
+        viewModel = new ViewModelProvider(this).get(SharedViewModelLogin.class);
         viewModel.getFragment().observe(this, this::toolbarControl);
     }
 

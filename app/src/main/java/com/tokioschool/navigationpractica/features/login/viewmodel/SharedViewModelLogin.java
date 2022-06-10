@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.tokioschool.navigationpractica.domain.User;
 
-public class SharedViewModel extends ViewModel
+public class SharedViewModelLogin extends ViewModel
 {
 
     private final MutableLiveData<String> mutableFragment= new MutableLiveData<>();

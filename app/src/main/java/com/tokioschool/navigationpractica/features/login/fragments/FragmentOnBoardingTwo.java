@@ -10,12 +10,12 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 import com.tokioschool.navigationpractica.databinding.FragmentOnBoardingTwoBinding;
-import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModel;
+import com.tokioschool.navigationpractica.features.login.viewmodel.SharedViewModelLogin;
 
 public class FragmentOnBoardingTwo extends Fragment {
 
     private FragmentOnBoardingTwoBinding binding;
-    private SharedViewModel viewModel;
+    private SharedViewModelLogin viewModel;
     private static final String TAG="FragmentOnBoardingTwo";
 
     @Override
@@ -27,7 +27,7 @@ public class FragmentOnBoardingTwo extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+        viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModelLogin.class);
         viewModel.setFragment(TAG);
     }
 

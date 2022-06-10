@@ -46,6 +46,7 @@
     <string name="menu_home_coche_item">Alquila un coche</string>
     <string name="home_toolbar_title">Home</string>
     <string name="home_snackbar_text">El usuario es %1$s y la contraseña es %2$s</string>
+    <string name="home_fragment_one_snackbar_text">En el fragment el usuario es %1$s y la contraseña es %2$s</string>
     <string name="login_button_ok">Entendido</string>
     <string name="main_unknown_fragment">Fragment desconocido</string>
     <string name="onboarding_one_title">Tu App de Viajes</string>
