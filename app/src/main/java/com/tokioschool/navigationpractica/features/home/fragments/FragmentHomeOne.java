@@ -43,19 +43,13 @@ public class FragmentHomeOne extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         viewModel=new ViewModelProvider(requireActivity()).get(SharedViewModelHome.class);
-        viewModel.getUser().observe(getViewLifecycleOwner(), user->{
-            try {
-                showUser(user);
-             }catch (Exception e){
-              Log.e(TAG,getString(R.string.home_user_error));
-            }
-        });
+        viewModel.getUser().observe(getViewLifecycleOwner(), this::showUser);
     }
 
-    private void showUser(User user) {
+    private void showUser(@Nullable  User user) {
+        if(user==null) return;
         Snackbar.make(requireActivity().findViewById(R.id.fragmentHomeOneLayout)
                 ,getString( R.string.home_fragment_one_snackbar_text, user.getUsername(), user.getPassword())
                 , BaseTransientBottomBar.LENGTH_SHORT).show();
     }
-
 }
